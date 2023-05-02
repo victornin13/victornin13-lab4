@@ -123,8 +123,8 @@ public class EnigmaFrame extends JFrame {
             int inner = (int) Inner.getSelectedItem();
             int middle = (int) Middle.getSelectedItem();
             int outer = (int) Outer.getSelectedItem();
-            //String initialPosition = pos.getText();
-            Enigma enigma = new Enigma(inner, middle, outer);
+            String initialPosition = pos.getText();
+            Enigma enigma = new Enigma(inner, middle, outer, initialPosition);
     
             StringBuilder outputMessage = new StringBuilder();
     
